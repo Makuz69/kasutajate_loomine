@@ -11,7 +11,7 @@ $fullname = $firstname + " " + $lastname
 # Lisame automaatse konto kirjelduse
 $description = "Local Account"
 
-Write-Host 'Creating new user ' $username
+Write-Host 'Creating new user:' $username
 
 $userExists = Get-LocalUser $username -ErrorAction SilentlyContinue
 
